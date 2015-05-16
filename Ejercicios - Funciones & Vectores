@@ -32,3 +32,72 @@ public class Program {
         return v;
     }
 }
+**********************************************************************************************************************
+import java.util.Scanner;
+public class Program {
+	public static void main(String[] args) {
+     Double[] salario = new Double[5];
+     Double promedio=0.0;
+     Scanner lector = new Scanner(System.in);
+     
+     for(int cont=0;cont<5;cont++){
+     System.out.println("digite salario");
+        salario[cont]= lector.nextDouble(); 
+     }
+     promedio=promediosalario(salario);
+     System.out.println("El promedio de salario es:"+promedio);
+	}
+    public static Double promediosalario(Double[] salario){
+    Double suma=0.0;
+        Double prom=0.0;
+        
+        for(int cont=0;cont<5;cont++){
+        suma=suma+salario[cont];
+            
+        }
+        prom=suma/5;
+        return prom;
+    }
+}
+*******************************************************************************
+import java.util.Scanner;
+public class Program {
+    public static void main(String[] args) {
+        String[] dia  = new String [10];
+     Scanner lector = new Scanner(System.in);
+     
+     for(int cont=0;cont<10;cont++){
+     System.out.println("digite un numero del 1 al 7");
+        dia[cont]= lector.next(); 
+     }
+     diassemana(dia);          
+}
+    public static void diassemana(String [] dia){        
+    
+        for(int cont=0;cont<10;cont++)
+        {            
+        if(dia[cont].equals("1")){
+            System.out.println("lunes");
+        }         
+     if(dia[cont].equals("2")){
+            System.out.println("martes");
+        }
+            if(dia[cont].equals("3")){
+            System.out.println("miercoles");
+        }    
+            if(dia[cont].equals("4")){
+            System.out.println("jueves");
+        }  
+            if(dia[cont].equals("5")){
+            System.out.println("viernes");
+        }      
+            if(dia[cont].equals("6")){
+            System.out.println("sabado");
+        }        
+            if(dia[cont].equals("7")){
+            System.out.println("domingo");
+        }         
+           }
+       
+    }
+        }
