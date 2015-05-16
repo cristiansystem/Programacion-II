@@ -101,3 +101,14 @@ public class Program {
        
     }
         }
+***********************************************************************
+Hola Jhonathan
+
+
+le paso el codigo, copialo y pegalo en un block de notas, despues el nombre del archivo lo termina en .html
+<hmtl>
+  <body>
+  <title>Hola mundo</title>
+  </body>
+<html>
+
