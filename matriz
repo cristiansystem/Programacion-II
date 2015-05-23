@@ -18,9 +18,9 @@ public class Program {
         for(int f=0 ; f<2 ; f++){
         for(int c=0;c<3;c++){
             if(matiat[f][c].equals("a") || matiat[f][c].equals("e") || matiat[f][c].equals("i") || matiat[f][c].equals("o") || matiat[f][c].equals("u")) {            
-                cont=cont++;           
+                cont=cont+1;           
             }
-            cont2=cont2++;           
+            cont2=cont2+1;           
         }
      }
           System.out.println("en total ahi " + cont + " vocales");
