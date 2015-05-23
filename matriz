@@ -1,0 +1,29 @@
+import java.util.*;
+public class Program {
+	public static void main(String[] args) {
+     String[][] matiat=new String[2][3];
+     Scanner Lector = new Scanner(System.in);
+     for(int f=0 ; f<2 ; f++){
+        for(int c=0;c<3;c++){
+            System.out.println("Digite letra");
+            matiat[f][c]=Lector.next();                
+        }
+     }
+        contarvocales(matiat);
+ }
+    public static void contarvocales(String[][] matiat){
+        int cont=0; 
+        int cont2=0;
+        
+        for(int f=0 ; f<2 ; f++){
+        for(int c=0;c<3;c++){
+            if(matiat[f][c].equals("a") || matiat[f][c].equals("e") || matiat[f][c].equals("i") || matiat[f][c].equals("o") || matiat[f][c].equals("u")) {            
+                cont=cont++;           
+            }
+            cont2=cont2++;           
+        }
+     }
+          System.out.println("en total ahi " + cont + " vocales");
+         System.out.println("en total ahi "  + cont2 + " consonantes");
+    }
+}
